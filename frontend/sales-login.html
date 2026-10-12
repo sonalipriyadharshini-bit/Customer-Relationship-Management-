@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customer Hub - Sales sign in</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body class="auth staff" data-role="sales">
+  <section class="art">
+    <div class="blob b1"></div><div class="blob b2"></div>
+    <div class="logo">Customer<span> Hub</span></div>
+    <div>
+      <h2>Grow every customer relationship.</h2><p>See your customers, add their orders and support cases, and keep every request moving.</p><ul><li>Your assigned customers</li><li>Orders and support cases</li><li>Status updates in one click</li></ul>
+    </div>
+    <small>Sales team access</small>
+  </section>
+
+  <section class="fw"><div class="box">
+    <h1>Sales sign in</h1><p class="lead">Use the username and password given by your admin.</p>
+    <div class="err" id="msg" hidden></div>
+
+    <form id="in" novalidate>
+      <div class="f"><label for="u1">Username</label><input id="u1" autocomplete="username"></div>
+      <div class="f"><label for="p1">Password</label><div class="pwrap"><input id="p1" type="password" autocomplete="current-password"><button type="button">Show</button></div></div>
+      <button class="btn teal" type="submit">Sign in</button>
+    </form>
+  <p class="swap"><a href="login.html">Choose a different login</a></p></div></section>
+  <script src="api.js?v=4"></script>
+  <script src="login.js?v=4"></script>
+</body>
+</html>

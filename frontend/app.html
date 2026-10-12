@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customer Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+<div class="app">
+  <nav class="side" aria-label="Main">
+    <div class="logo">Customer<span> Hub</span></div>
+    <div id="nav"></div>
+    <div style="padding:8px 12px;color:#8FAAB3;font-size:11px">Build v4</div>
+    <button class="nav out" id="out">Sign out</button>
+  </nav>
+  <main>
+    <header class="top">
+      <div><h1 class="pt">Hello, <span id="who"></span></h1><p id="vt"></p></div>
+      <div style="display:flex;gap:12px;align-items:center"><span id="pa"></span><span class="pill" id="pill"></span></div>
+    </header>
+    <div class="err" id="flash" hidden></div>
+    <div id="view"></div>
+  <div class="mod" id="mod" hidden></div>
+  </main>
+</div>
+<script src="api.js?v=4"></script>
+<script src="app.js?v=4"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customer Hub - Customer sign in</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body class="auth cust" data-role="customer">
+  <section class="art">
+    <div class="blob b1"></div><div class="blob b2"></div>
+    <div class="logo">Customer<span> Hub</span></div>
+    <div>
+      <h2>Shop, track orders, return items and get help.</h2><p>Place an order, follow it until it arrives, and ask for a return or support in a few clicks.</p><ul><li>Order from the Shop</li><li>Live order status</li><li>Easy returns and support</li></ul>
+    </div>
+    <small>Customer account</small>
+  </section>
+
+  <section class="fw"><div class="box">
+    <h1>Customer sign in</h1><p class="lead">Sign in with your email, or create a customer account.</p>
+    <div class="tabs"><button class="on" data-t="in" type="button">Sign in</button><button data-t="up" type="button">New customer</button></div>
+    <div class="err" id="msg" hidden></div>
+
+    <form id="in" novalidate>
+      <div class="f"><label for="u1">Email</label><input id="u1" type="email" autocomplete="username"></div>
+      <div class="f"><label for="p1">Password</label><div class="pwrap"><input id="p1" type="password" autocomplete="current-password"><button type="button">Show</button></div></div>
+      <button class="btn teal" type="submit">Sign in</button>
+    </form>
+
+    <form id="up" novalidate hidden>
+      <div class="f"><label for="n2">Full name</label><input id="n2" autocomplete="name"></div>
+      <div class="f"><label for="e2">Email</label><input id="e2" type="email" autocomplete="email"></div>
+      <div class="f"><label for="p2">Password</label><div class="pwrap"><input id="p2" type="password" autocomplete="new-password" placeholder="At least 6 characters"><button type="button">Show</button></div></div>
+      <div class="f"><label for="c2">Confirm password</label><input id="c2" type="password" autocomplete="new-password"></div>
+      <button class="btn teal" type="submit">Create customer account</button>
+    </form>
+  <p class="swap"><a href="login.html">Choose a different login</a></p></div></section>
+  <script src="api.js?v=4"></script>
+  <script src="login.js?v=4"></script>
+</body>
+</html>
